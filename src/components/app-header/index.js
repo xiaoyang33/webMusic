@@ -8,7 +8,7 @@ import { SearchOutlined } from '@ant-design/icons';
 export default memo(function AppHeader() {
   function handleNav(item,index){
     if(index<3){
-      return <NavLink exact to={item.path}>{item.title}</NavLink>
+      return <NavLink  to={item.path}>{item.title}</NavLink>
     }else{
       return <a href={item.path} target="_blank" rel="noreferrer">{item.title}</a>
     }
@@ -30,7 +30,7 @@ export default memo(function AppHeader() {
         <ContentRight>
             <Input placeholder="音乐/视频/电台/用户" prefix={<SearchOutlined />}/>
             <div className="btn">创作者中心</div>
-            <a href="javaScript:;" className="login">登录</a>
+            <a href="#/" className="login">登录</a>
         </ContentRight>
       </div>
     </Header>

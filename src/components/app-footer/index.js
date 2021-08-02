@@ -12,8 +12,8 @@ export default memo(function AppFooter() {
           <ul className="service-list">
             {footerLinks.map(item => {
               return (
-                <Fragment>
-                  <a key={item.title} href={item.link}>
+                <Fragment key={item.link}>
+                  <a key={item.title}  href={item.link}>
                     {item.title}
                   </a>
                   <span className="line">|</span>
@@ -35,8 +35,8 @@ export default memo(function AppFooter() {
           {
             footerImages.map(item=>{
               return (
-                <li className="item" key={item.title}>
-                  <a href={item.link}></a>
+                <li className="item" key={item.link}>
+                  <a href={item.link}>a</a>
                   <span>{item.title}</span>
                 </li>
               )

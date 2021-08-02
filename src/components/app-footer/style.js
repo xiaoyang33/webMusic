@@ -48,6 +48,7 @@ export const ContentRight = styled.ul`
     background: url(${img}) no-repeat ;
     background-position: -63px -386px;
     background-size: 110px 430px;
+    text-indent: -9999px;
   }
   
 `
